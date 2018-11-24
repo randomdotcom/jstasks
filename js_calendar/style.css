@@ -17,6 +17,7 @@
 .main {
     background-color: #f2f2f2;
     width: 60vw;
+    min-width: 642px;
 }
 
 .curDateBlock {

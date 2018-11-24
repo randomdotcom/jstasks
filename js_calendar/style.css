@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    background-color: #1f1f1f;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.main {
+    background-color: #f2f2f2;
+    width: 60vw;
+}
+
+.curDateBlock {
+    text-align: center;
+    background-color: #4b4b4b;
+    
+}
+.curDateBlock p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #f2f2f2;
+}
+
+.monthPickerBlock {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+}
+.pickedMonth {
+    font-weight: bold;
+    font-size: 14pt;
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: default;
+}
+.arrow {
+    cursor: pointer;
+    color: #a5c55a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 15pt;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+    transition: background-color 0.1s linear,
+                color 0.1s linear;
+}
+.prev-arrow, .next-arrow {
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+.arrow:hover {
+    background-color: #a4d337;
+    color: #1f1f1f;
+}
+
+.weekDaysBlock {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dayBlock {
+    width: 13%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    border-bottom: 1px solid #a4d337;
+}
+
+
+.monthsDaysBlock {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.numberBlock {
+    width: 13%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+.today {
+    background-color: #3d3d3d;
+    color: #a4d337;
+}
